@@ -5,5 +5,12 @@
     "userMessage": "Hello, please help me with...",
     "agentReply": "I can see why that would be difficult. I'd like to understand this better. Can you think of a specific moment when you felt this way?",
     "step": "EXPLORE"
+  },
+  {
+    "timestamp": "2025-12-05T23:52:47.516Z",
+    "sessionId": "6b2792b2-456f-47a2-a472-9e234468a81d",
+    "userMessage": "It was stressful cause...",
+    "agentReply": "Here's something that might help: taking short breaks throughout the day. Even 5 minutes to step away can help reset your mind. Does that feel like something you could try?",
+    "step": "COPING"
   }
 ]
