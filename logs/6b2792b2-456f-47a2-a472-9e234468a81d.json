@@ -12,5 +12,12 @@
     "userMessage": "It was stressful cause...",
     "agentReply": "Here's something that might help: taking short breaks throughout the day. Even 5 minutes to step away can help reset your mind. Does that feel like something you could try?",
     "step": "COPING"
+  },
+  {
+    "timestamp": "2025-12-05T23:53:12.489Z",
+    "sessionId": "6b2792b2-456f-47a2-a472-9e234468a81d",
+    "userMessage": "Thanks...",
+    "agentReply": "From what you've told me, you're dealing with some real challenges, and being here and sharing takes courage. Is there something else you'd like to share?",
+    "step": "WRAP_UP"
   }
 ]
