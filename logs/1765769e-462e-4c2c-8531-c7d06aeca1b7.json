@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2025-12-05T20:22:15.903Z",
+    "sessionId": "1765769e-462e-4c2c-8531-c7d06aeca1b7",
+    "userMessage": "hello help me",
+    "agentReply": "I hear that you're feeling challenged. What's been happening?",
+    "step": "CHECK_IN"
+  },
+  {
+    "timestamp": "2025-12-05T20:22:28.004Z",
+    "sessionId": "1765769e-462e-4c2c-8531-c7d06aeca1b7",
+    "userMessage": "I am stressed with this research paper",
+    "agentReply": "That sounds really difficult. I'd like to understand this better. Can you think of a specific moment when you felt this way?",
+    "step": "EXPLORE"
+  }
+]
