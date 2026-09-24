@@ -29,18 +29,17 @@ export default function Home() {
 
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>About This Study</CardTitle>
+            <CardTitle>About This Prototype</CardTitle>
             <CardDescription>
-              Please read the following information carefully before participating
+              Please read the limitations before trying the prototype
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4 text-slate-700">
             <div>
               <h3 className="font-semibold text-slate-900 mb-2">What is this?</h3>
               <p>
-                This is a research prototype exploring how AI can provide supportive conversations.
-                You'll interact with an AI system that uses counselling-inspired techniques to offer
-                emotional support.
+                This prototype explores a short, structured support conversation using a rule-based
+                agent. It is designed for software evaluation, not mental health treatment.
               </p>
             </div>
 
@@ -66,8 +65,8 @@ export default function Home() {
             <div>
               <h3 className="font-semibold text-slate-900 mb-2">Your Privacy</h3>
               <p>
-                Your responses are stored securely and used only for research purposes. No personally
-                identifiable information is collected unless you choose to share it.
+                Messages are stored in the configured Supabase project. When testing, do not enter
+                names, contact details, health records, or other sensitive personal information.
               </p>
             </div>
 
@@ -87,8 +86,8 @@ export default function Home() {
 
         <div className="text-center">
           <p className="text-sm text-slate-600 mb-4">
-            By clicking "Start", you consent to participate in this research study and
-            acknowledge that you have read and understood the information above.
+            By clicking "Start", you acknowledge that this is a prototype and that messages may be
+            stored in the configured database.
           </p>
           <Link href="/survey">
             <Button size="lg" className="bg-slate-900 hover:bg-slate-800">
