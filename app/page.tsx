@@ -56,7 +56,7 @@ export default function Home() {
             <div>
               <h3 className="font-semibold text-slate-900 mb-2">What to expect</h3>
               <p>
-                You'll first answer a few questions to personalize your experience. Then you'll
+                You’ll first answer a few questions to personalize your experience. Then you'll
                 have a brief conversation with the AI support tool. The entire session takes
                 about 10-15 minutes.
               </p>
@@ -71,9 +71,9 @@ export default function Home() {
             </div>
 
             <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <h3 className="font-semibold text-red-900 mb-2">If You're in Crisis</h3>
+              <h3 className="font-semibold text-red-900 mb-2">If You’re in Crisis</h3>
               <p className="text-red-800">
-                If you're experiencing a mental health emergency, please contact:
+                If you’re experiencing a mental health emergency, please contact:
               </p>
               <ul className="list-disc list-inside text-red-800 mt-2">
                 <li>Emergency services: 911 (US) or 999 (UK)</li>
@@ -86,7 +86,7 @@ export default function Home() {
 
         <div className="text-center">
           <p className="text-sm text-slate-600 mb-4">
-            By clicking "Start", you acknowledge that this is a prototype and that messages may be
+            By clicking &quot;Start&quot;, you acknowledge that this is a prototype and that messages may be
             stored in the configured database.
           </p>
           <Link href="/survey">
