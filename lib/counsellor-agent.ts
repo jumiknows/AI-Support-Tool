@@ -1,4 +1,4 @@
-import { Session, Message, Profile } from "./supabase";
+import type { Session, Message, Profile } from "./types";
 
 type ConversationStep = "INTRO" | "CHECK_IN" | "EXPLORE" | "COPING" | "WRAP_UP" | "END";
 
