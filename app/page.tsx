@@ -20,10 +20,10 @@ export default function Home() {
       <div className="container mx-auto px-4 py-12 max-w-3xl">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-slate-900 mb-4">
-            AI Counselling Support Tool Study
+            AI Support Tool Prototype
           </h1>
           <p className="text-lg text-slate-600">
-            Help us research how AI can provide emotional support
+            A prototype for structured supportive conversations
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
                 <li>This is NOT a replacement for professional mental health care</li>
                 <li>The AI cannot diagnose conditions or provide medical advice</li>
                 <li>Do not use this tool for emergencies or crisis situations</li>
-                <li>Your conversations will be logged for research purposes</li>
+                <li>Messages may be stored in the configured Supabase project</li>
               </ul>
             </div>
 
