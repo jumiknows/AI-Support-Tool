@@ -56,7 +56,7 @@ export default function Home() {
             <div>
               <h3 className="font-semibold text-slate-900 mb-2">What to expect</h3>
               <p>
-                You’ll first answer a few questions to personalize your experience. Then you'll
+                You’ll first answer a few questions to personalize your experience. Then you’ll
                 have a brief conversation with the AI support tool. The entire session takes
                 about 10-15 minutes.
               </p>
