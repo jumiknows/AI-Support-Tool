@@ -1,12 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/lib/supabase-admin";
 import {
   runCounsellorAgent,
   checkForCrisisKeywords,
   getCrisisResponse,
 } from "@/lib/counsellor-agent";
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
-import { join } from "path";
 
 export async function POST(request: NextRequest) {
   try {
@@ -105,31 +103,6 @@ export async function POST(request: NextRequest) {
 
     if (updateError) {
       console.error("Error updating session:", updateError);
-    }
-
-    try {
-      const logsDir = join(process.cwd(), "logs");
-      if (!existsSync(logsDir)) {
-        mkdirSync(logsDir, { recursive: true });
-      }
-
-      const logEntry = {
-        timestamp: new Date().toISOString(),
-        sessionId,
-        userMessage: text,
-        agentReply: replyText,
-        step: newStep,
-      };
-
-      const logPath = join(logsDir, `${sessionId}.json`);
-      const existingLogs = existsSync(logPath)
-        ? JSON.parse(readFileSync(logPath, "utf-8"))
-        : [];
-
-      existingLogs.push(logEntry);
-      writeFileSync(logPath, JSON.stringify(existingLogs, null, 2));
-    } catch (logError) {
-      console.error("Error writing to log file:", logError);
     }
 
     return NextResponse.json({

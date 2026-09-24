@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFileSync, existsSync } from "fs";
-import { join } from "path";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/lib/supabase-admin";
 
 export const dynamic = 'force-dynamic';
 
@@ -44,18 +42,6 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const logPath = join(process.cwd(), "logs", `${sessionId}.json`);
-    let conversationLog = [];
-
-    if (existsSync(logPath)) {
-      try {
-        const fileContent = readFileSync(logPath, "utf-8");
-        conversationLog = JSON.parse(fileContent);
-      } catch (err) {
-        console.warn("Failed to read log file:", err);
-      }
-    }
-
     return NextResponse.json({
       sessionId: session.id,
       mode: session.mode,
@@ -64,7 +50,6 @@ export async function GET(request: NextRequest) {
       updatedAt: session.updated_at,
       finalStep: session.step,
       messages: messages || [],
-      conversationLog,
     });
   } catch (error) {
     console.error("Error in /api/session/log:", error);
