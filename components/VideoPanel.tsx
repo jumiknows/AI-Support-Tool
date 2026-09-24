@@ -55,7 +55,7 @@ export default function VideoPanel({ mode, step, isListening = false, showVideo 
             Text-only Condition
           </h3>
           <p className="text-sm text-slate-500 max-w-xs mx-auto">
-            This session is in text-only mode. You'll receive text-based responses
+            This session is in text-only mode. You’ll receive text-based responses
             without visual avatar feedback.
           </p>
         </CardContent>
