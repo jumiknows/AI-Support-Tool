@@ -1,0 +1,11 @@
+# Default owner
+* @jumiknows
+
+# Data, safety, and repository-control areas
+/.github/ @jumiknows
+/SECURITY.md @jumiknows
+/.env.example @jumiknows
+/lib/counsellor-agent.ts @jumiknows
+/lib/supabase-admin.ts @jumiknows
+/supabase/ @jumiknows
+/app/api/ @jumiknows
