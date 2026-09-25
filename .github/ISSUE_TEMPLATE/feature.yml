@@ -1,0 +1,23 @@
+name: Feature
+description: Propose a focused prototype improvement.
+title: "feat: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data and safety impact
+      description: Note any effect on stored messages, Supabase, authentication, or user-facing safety behavior.
+    validations:
+      required: true
