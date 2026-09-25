@@ -69,3 +69,10 @@ GitHub Actions runs these checks on pull requests.
 ## Status
 
 Research and portfolio prototype. It is not intended for real clinical use.
+
+
+## Engineering workflow
+
+Changes go through pull requests with type checking, linting, and a production build. Data access, Supabase policies, environment variables, and user-facing safety behavior are called out explicitly during review.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
